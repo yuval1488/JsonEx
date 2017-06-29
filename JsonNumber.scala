@@ -32,7 +32,7 @@ case class JsonDouble(value: Double) extends JsonNumber{
   override def toString: String = value.toString
 }
 object JsonDouble {
-  implicit def doubleToJsonDouble(value: Double): JsonDouble = JsonDouble(value)
+//  implicit def doubleToJsonDouble(value: Double): JsonDouble = JsonDouble(value)
 }
 
 case class JsonInt(value: Int) extends JsonNumber{

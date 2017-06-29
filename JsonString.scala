@@ -13,6 +13,4 @@ object JsonString {
     tokenizer.advance() //"
     JsonString(result)
   }
-
-  implicit def stringToJsonString(value: String): JsonString = JsonString(value)
 }

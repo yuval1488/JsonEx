@@ -20,6 +20,4 @@ object JsonField {
 
     JsonField(key, value)
   }
-
-  implicit def tupleToJsonField(value: (String, JsonValue)): JsonField = JsonField(JsonString(value._1), value._2)
 }

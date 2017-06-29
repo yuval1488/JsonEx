@@ -3,6 +3,7 @@
 case class JsonArray(value: Seq[JsonValue]) extends JsonValue {
   override def toString: String = value.mkString("[", ",", "]")
 }
+
 object JsonArray {
   def parse(tokenizer: JsonTokenizer): JsonArray = {
     tokenizer.advance() // [
@@ -30,6 +31,5 @@ object JsonArray {
     tokenizer.advance() // ]
     JsonArray(arr)
   }
-
 
 }
